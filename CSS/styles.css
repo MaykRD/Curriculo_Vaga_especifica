@@ -1,0 +1,147 @@
+:root {
+    --primary-color: #003366; /* Azul Marinho Profissional */
+    --secondary-color: #f4f4f9; /* Cinza Claro para o fundo */
+    --accent-color: #007bff; /* Azul de destaque */
+    --text-color: #333;
+    --header-bg: #fff;
+    --section-bg: #fff;
+    --border-color: #ddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: var(--header-bg);
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--header-bg);
+    border: 4px solid var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+.photo-placeholder {
+    width: 100%;
+    height: 100%;
+    /* Use um ícone ou imagem de placeholder se não tiver a foto */
+    background-color: #e9ecef; 
+    border-radius: 50%;
+}
+
+.header-info h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.header-info h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.section {
+    background-color: var(--section-bg);
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+}
+
+/* Skills Section Styling */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-item {
+    flex: 1;
+    min-width: 250px;
+}
+
+.skill-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.skill-item ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skill-item li {
+    background-color: var(--secondary-color);
+    padding: 8px 15px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+/* Timeline/Experience Section Styling */
+.timeline-item {
+    border-left: 4px solid var(--accent-color);
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.timeline-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.timeline-item p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Contact Info Styling */
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
